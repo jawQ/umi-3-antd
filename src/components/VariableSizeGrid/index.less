@@ -1,0 +1,38 @@
+:global {
+  .galois_virtualized_container {
+    position: relative;
+    overflow: auto;
+
+    tr,
+    td {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .galois_virtualized_container td,
+  .galois_virtualized_container th {
+    padding: 0 10px;
+    white-space: nowrap;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .galois_virtualized_placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .galois_virtualized_table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+}
