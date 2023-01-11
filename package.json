@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "set-node-options": "npx cross-env NODE_OPTIONS=--openssl-legacy-provider",
-    "dev": "npm run set-node-options umi dev",
+    "dev": "umi dev",
+    "dev-node17+": "npm run set-node-options umi dev",
     "build": "npm run set-node-options umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",

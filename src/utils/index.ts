@@ -44,9 +44,9 @@ export function rndstr(str: string) {
 }
 
 export const myajax = () => {
-  const d = Array.from({ length: 1000 }, (v, k) => ({
+  const d = Array.from({ length: 1000 }, (v, i) => ({
     ...data,
-    id: k + '' + data.id,
+    id: i + '' + data.id,
   }));
   return new Promise<any[]>((resolve, reject) => {
     setTimeout(() => {
@@ -56,9 +56,9 @@ export const myajax = () => {
 };
 
 export const mockData = () => {
-  const d = Array.from({ length: 1000 }, (v, k) => ({
+  const d = Array.from({ length: 1000 }, (v, i) => ({
     ...data,
-    id: k + '' + data.id,
+    id: i + '' + data.id,
   }));
   return d;
 };
